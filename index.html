@@ -1,0 +1,30 @@
+<html ng-app="myApp">
+  <head>
+    <title>Music Play</title>
+    <link rel="stylesheet" href="/content/css/master.css" type="text/css"/>
+    <script src="app/lib/angular.min.js"></script>
+  </head>
+  <body ng-controller="myMainController">
+    <div class="">
+      <div class="">
+        <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Album Title</th>
+              </tr>
+            </thead>
+            <tbody >
+              <tr ng-repeat= "music in musicPlay" >
+                <td>{{ music.name }}</td>
+                <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>
