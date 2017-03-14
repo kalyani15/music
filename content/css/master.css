@@ -1,0 +1,41 @@
+body{
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: white;
+}
+
+.mainFrame{
+  background-color: grey;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+.mainFrame p{
+  margin-left: 45%;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding-top: 20px;
+
+}
+
+#ArtistControlBlock img{
+  margin:auto;
+  width: 100%;
+}
+
+#ArtistControlBlock {
+  display: inline-block;
+  width: 35%;
+  left:50%;
+  top:100px;
+  padding-left: 350px;
+}
+
+#artistName{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -100px;
+
+
+}
