@@ -1,28 +1,37 @@
-<html ng-app="myApp">
+<html ng-app='myApp'>
   <head>
-    <title>Music Play</title>
-    <link rel="stylesheet" href="content\css\master.css">
+    <title>Sample template</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="content\css\master.css"/>
     <script src="app/lib/angular.min.js"></script>
     <script src="app/app.js"></script>
 
   </head>
-  <body ng-controller="myMainController">
-    <div class = "mainFrame">
-      <p>
-        Music by artist
-      </p>
-      <div ng-repeat= "music in musicPlay">
-        <div id="ArtistControlBlock" ng-repeat="slide in slides">
-          <img ng-src="{{slide.image}}">
-          <div id="artistName">
-            {{music.name}}
-          </div><br><br><br><br><br>
-        </div>
-      </div>
-    </div>
-  </body>
 
+  <body ng-controller='myMainController'>
+    <div id="container">
+      <div id="header"></div>
+      <div id="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Artist</a></li>
+          <li><a href="#">Albums</a></li>
+          <li><a href="#">Songs</a></li>
+        </ul>
+      </div>
+      <div id="side_bar"></div>
+      <div id="main_body">
+        <div ng-repeat="music in musicPlay">
+          <span>{{music.name}}</span>
+          <img id="artist_content" ng-src="{{music.image}}"></img>
+
+
+
+        </div>
+
+      </div>
+      <div id="footer"></div>
+    </div>
+
+  </body>
 </html>
-<div id= "mainSubTable" ng-repeat= "musicAlbums in music.albums">
-    {{ musicAlbums.title}}
-  </div>

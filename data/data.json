@@ -1,5 +1,6 @@
 [{
 	"name": "Radiohead",
+	"image": "content/images/radiohead.jpg",
 	"albums": [{
 		"title": "The King of Limbs",
 		"songs": [{
@@ -71,6 +72,7 @@
 	}]
 }, {
 	"name": "Portishead",
+	"image": "music/content/image/backgroundImage.jpg",
 	"albums": [{
 		"title": "Dummy",
 		"songs": [{
