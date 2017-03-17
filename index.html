@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="content\css\master.css"/>
     <script src="app/lib/angular.min.js"></script>
+    <script src="app/lib/angular-route.min.js"></script>
     <script src="app/app.js"></script>
 
   </head>
@@ -13,7 +14,7 @@
       <div id="header"></div>
       <div id="menu">
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="#!/artist">Home</a></li>
           <li><a href="#">Artist</a></li>
           <li><a href="#">Albums</a></li>
           <li><a href="#">Songs</a></li>
@@ -21,14 +22,7 @@
       </div>
       <div id="side_bar"></div>
       <div id="main_body">
-        <div ng-repeat="music in musicPlay">
-          <span>{{music.name}}</span>
-          <img id="artist_content" ng-src="{{music.image}}"></img>
-
-
-
-        </div>
-
+        <main ng-view></main>
       </div>
       <div id="footer"></div>
     </div>

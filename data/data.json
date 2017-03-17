@@ -72,7 +72,7 @@
 	}]
 }, {
 	"name": "Portishead",
-	"image": "music/content/image/backgroundImage.jpg",
+	"image": "content/images/portishead.jpg",
 	"albums": [{
 		"title": "Dummy",
 		"songs": [{

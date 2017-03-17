@@ -63,29 +63,44 @@ body{
   height: 400px;
   background: #779;
   float: right;
-}
-
-#artist_content{
-  width: 150px;
-  height: 150px;
-  float: left;
-  clear: left;
+  margin-top: auto;
+  margin-bottom: auto;
+  overflow-y: scroll;
 
 }
-
-#main_body div span{
-  float: left;
-
-}
-
 #main_body div{
   margin-left: auto;
   margin-right: auto;
   width: 500px;
-  margin-top: 50px;
-  display: inline-block;
+  height: auto;
+  margin-top: 100px;
 
 }
+
+#navlist li
+{
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+.thumbnail {
+  width: 40%;
+  height: 40%;
+  border: 1px solid;
+}
+
+#span_content{
+  border: 1px solid;
+  font-family: sans-serif, serif, fantasy;
+  font-size: 18px;
+  display: inline;
+  padding-left: 10.5%;
+  padding-right: 10.5%;
+  text-align: center;
+
+}
+
 
 #footer{
   height: 100px;
