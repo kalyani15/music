@@ -1,12 +1,10 @@
 <div>
-  <ul id="navlist">
-      <li ng-repeat="music in musicPlay">
+  <ul id="navlist" ng-repeat="music in musicArtist">
+      <li >
           <img class="thumbnail" ng-src="{{music.image}}">
       </li>
-  </ul>
-  <ul id="navlist">
-      <li ng-repeat="music in musicPlay">
-          <p id="span_content">{{music.name}}</p>
+      <li >
+          <div id="span_content"><p><u>Artist name</u> {{music.name}}</p></div>
       </li>
   </ul>
 </div>

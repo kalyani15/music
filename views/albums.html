@@ -1,0 +1,19 @@
+<div id="navAlbums" ng-repeat="music in musicArtist">
+  <ul ng-repeat="m in music.albums">
+      <li>
+          <div>
+            <p><u>Artist name:</u>  {{music.name}}
+            <div class="">
+              <p><u>Album name:</u>  {{m.title}}
+              <div id="navSongs" ng-repeat="musicSongs in m.songs">
+                  {{musicSongs.title}}
+              </div>
+            </div>
+
+          </div>
+      </li>
+      <li >
+
+      </li>
+  </ul>
+</div>
